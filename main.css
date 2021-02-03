@@ -5,11 +5,14 @@ body{
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
+li{display: inline;}
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 h1{
     position: absolute;
     z-index: -1;
@@ -22,28 +25,26 @@ h1{
     transform: translateY(-50%);
     margin: 50px 0px 0px 70px;
     padding: 20px 20px 20px 20px;
-    /*mix-blend-mode: hard-light;*/
     text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
     background: rgba(41, 41, 41, 0.5);
 }
 
-li{display: inline;}
-
-#video{
+h2{
     position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-#photos{
-    position: absolute;
-    margin: 130px 0 0 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: -1;
+    width: 400px;
+    height: 400px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: left;
+    color: rgb(201, 184, 184);
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 50px 0px 0px 700px;
+    padding: 20px 20px 20px 20px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    background: rgba(41, 41, 41, 0.5);
 }
 
 .fontsize1{
@@ -51,15 +52,20 @@ li{display: inline;}
     font-size: 20px;
 }
 
+.fontsize2{
+    padding: 10%;
+    font-weight: 500;
+    font-size: 30px;
+}
+
 .container{
     display: flex;
     justify-content: center;
-    min-height: vl;
+    min-height: 100px;
     align-items: baseline;
     background-color: rgb(24, 24, 24);
-    width: 1000px;
     opacity: 0.9;
-    margin: auto;
+    margin: 2%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
 .box{
@@ -83,16 +89,10 @@ li{display: inline;}
     text-align: center;
     padding: 20px;
 }
-.box4{
-    color:rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 500;
-    text-align: left;
-    padding: 20px;
-}
 
-a:hover{color:white;}
+a:hover{
+    color:white;
+}
 
 a{
     color: rgb(177, 177, 177);
@@ -133,7 +133,7 @@ a:active{
     text-align: left;
 }
 .dropdown-content a:hover{
-      background-color:none;
+      background-color:rgb(49, 49, 49);
       color: white;
 }
 .dropdown:hover .dropdown-content{
@@ -141,56 +141,15 @@ a:active{
     color: white;
 } 
 
-
-.gtrbackground{
-    float: left;
-    text-align: center;
-    width: 200px;
-    padding: 30px 30px 10px 30px;
-    margin-top: 10px;
-
-}
-
-.gtrpics{
-    max-width: 100%;
-    object-fit: cover;
-    /* padding: 40px 0px 0px 1000px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2; */
-}
-/* .gtrpic2{
-    padding: 0px 0px 0px 950px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2;
-}
-.gtrpic3{
-    padding: 0px 0px 0px 1000px;
-    margin: 0px 0px 0px 0px;
-    position: relative;
-    z-index: 2;
-} */
-
-img.border{
-    border: 1px solid grey;
-    border-radius: 10px;
-}
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 15px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.footer{
-    font-family: sans-serif;
-    color: rgb(165, 165, 165);
-    margin: 625px 1075px 30px 70px;
-    padding: 5px 20px 5px 20px;
-    background-color: black;
-    opacity: .7;
-}
+.map {
+    max-height: 50%;
+    max-width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 2px solid rgb(44,44,44);
+    z-index: -1;
+  }
