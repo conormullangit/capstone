@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- INSERT NAV BAR AT TOP OF PAGE-->
+    <head>
+        <title>Capstone - Meet The Team</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- have added 5% padding in the CSS file to leave room for NAV Bar-->
+    <body>
+        <!-- //////////NAVBAR START/////////// -->
+    <div class="container">
+        
+        <a href="./index.html">
+            <img class="logo logos":hover src="./carlogo.png">
+        </a>
+        <ul class="navbar">
+            <li class="box"><a href="./index.html">Home</a></li>
+
+        <!-- ///////////PRODUCTS DROPDOWN/////////// -->
+            <li  class="dropdown">
+                <a href="./product1.html" class="box2 dropbtn">Products &darr;</a>
+                <div class="dropdown-content dropdown-content-two">
+                    <a class="box3" href="./product1.html">Audio Upgrade</a>
+                    <a class="box3" href="./product2.html">Repair & Diagnostic</a>
+                    <a class="box3" href="./product3.html">Bluetooth Stereo</a>
+                    <a class="box3" href="./product4.html">Rear Entertainment</a>
+                    <a class="box3" href="./product5.html">DAB Stereo</a>
+                    <a class="box3" href="./product6.html">Android Stereo</a>
+                    <a class="box3" href="./product7.html">iPod/Phone Stereo</a>
+                    <a class="box3" href="./product8.html">Mechless Stereo</a>
+                    <a class="box3" href="./product9.html">CD/mp3 Player</a>
+                    <a class="box3" href="./product10.html">USB/Aux Stereo</a>
+                </div>
+            </li>
+            <li class="box"><a href="./team.html">The Team</a></li>
+
+        <!-- ///////////CONTACT DROPDOWN/////////// -->
+            <li  class="dropdown">
+                <a href="./map.html" class="box2 dropbtn">Contact &darr;</a>
+                <div class="dropdown-content dropdown-content-two">
+                    <a class="box3" href="tel: +447841586260">&#128222; Telephone</a>
+                    <a class="box3" href="mailto:info@capstone.com">_&#9993; Email</a>
+                    <a class="box3" href="./map.html">&#127760; Find Us</a>
+        </ul>
+    </div>
+ <!-- ///////////NAVBAR END/////////// -->
+
+
+        <div id="menu"></div>
+
+        <!-- used p class instead of h1 to allow integration-->
+
+        <p class="header"><span>Meet our Specialised Team</span></p>
+
+        <!-- Table to allow mixture of text and pictures alongside
+        4 Columns Per row, used different p class styles to split
+        job roles, name and description-->
+        <hr>
+        
+        <table class="table1">
+            <tr>
+                <!-- Putting % width allows the table to always fit within the window regardless of size -->
+                <td width="15%">
+                    <img src="director.png" style="text-align: left;" width="200px" alt="The Boss" onmouseover="abc(this)" onmouseout="xyz(this)">
+                </td>
+
+                <td max-width="35%">
+                    <p style="text-align: left;">
+                        <p class="text1">Paul Capstone</p>
+                        <p class="text2">Company Director</p>
+                        <p class="text3">'The Boss' and the brains behind the business</p>
+                    </p>
+
+                </td>
+                <td width="35%">
+                    <p>
+                        <p class="text1" style="text-align: right;">John Sellsworth</p>
+                        <p class="text2" style="text-align: right;">Head of Sales</p>
+                        <p class="text3" style="text-align: right;">The friendly voice on the other end of the phone</p>
+
+                    
+                    </p>
+
+                </td>
+                <td width="15%" style="text-align: right;">
+                    <img src="sales.png" width="200px" alt="John Sellsworth" onmouseover="abc(this)" onmouseout="xyz(this)">
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td width="auto">
+                    <img src="mech1.png" width="200px" alt="Joe Fixerman" onmouseover="abc(this)" onmouseout="xyz(this)">
+                </td>
+                <td width="auto">
+                    <p style="text-align: left;">
+                        
+                        <p class="text1">Joe Fixerman</p>
+                        <p class="text2">Chief Product Installer</p>
+                        <p class="text3">Over 10 years in the car aftermarket industry</p>
+                        
+                    </p>
+                </td>
+                <td width="auto">
+                    <p>
+                        <p class="text1" style="text-align: right;">Dave Johnson</p>
+                        <p class="text2" style="text-align: right;">Head of Aftersales Care</p>
+                        <p class="text3" style="text-align: right;">Looks after the Capstone Car Accessories family</p>
+                    </p>
+
+                </td>
+                <td width="auto" style="text-align: right;">
+                    <img src="mech 2.png" width="200px" onmouseover="abc(this)" onmouseout="xyz(this)">
+
+                </td>
+            </tr>  
+            <tr>
+                <td width="auto">
+                    <img src="sally.png" width="200px" alt="Mark" onmouseover="abc(this)" onmouseout="xyz(this)">
+                </td>
+                <td width="35%">
+                    <p style="text-align: left;">
+                        
+                        <p class="text1">Sally Anderson</p>
+                        <p class="text2">Mechanic</p>
+                        <p class="text3">Professionally installs your new systems</p>
+                        
+                    </p>
+                </td>
+                <td width="auto">
+                    <p>
+                        <p class="text1" style="text-align: right;">Harold Hargreaves</p>
+                        <p class="text2" style="text-align: right;">Head of Marketing</p>
+                        <p class="text3" style="text-align: right;">Ensures you know all about our latest products</p>
+                    </p>
+
+                </td>
+                <td width="auto" style="text-align: right;">
+                    <img src="harold1.png" width="200px" onmouseover="abc(this)" onmouseout="xyz(this)">
+
+                </td>
+            </tr> 
+
+            
+
+        </table>
+        
+        <hr>
+<!-- Put javascript script at the end of the page so that the page loads first, appreciate more of a problem for bigger scripts but good practice-->
+        <script src="javascript.js"></script>
+    </body>
+</html>
